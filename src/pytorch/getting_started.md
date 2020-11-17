@@ -33,9 +33,9 @@ Refer to the [Neuron installation guide](../../docs/neuron-install-guide.md) for
 
 ## Step 2: Compilation instance installations
 
-If using Conda DLAMI version 27 and up, activate pre-installed PyTorch-Neuron environment (using `source activate aws_neuron_pytorch_p36`  command). Please update PyTorch-Neuron environment by following update steps in [DLAMI release notes](../../release-notes/dlami-release-notes.md#conda-dlami).
+Please see [Neuron Install Guide](../../docs/neuron-install-guide.md) to setup virtual environment and install Torch-Neuron packages.  
 
-To install in your own AMI, please see [Neuron Install Guide](../../docs/neuron-install-guide.md) to setup virtual environment and install Torch-Neuron packages. 
+There is currently a bug in the  aws_neuron_pytorch_p36 conda environment on current DLAMI releases before v37.  Please do not use older DLAMI versions as parts of this tutorial will fail.  If you are using version 37, please ensure you update your conda environment for best performance.
 
 ## Step 3: Compile on compilation instance
 
